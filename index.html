@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Testing RJS</title>
+  <script type="text/javascript" src="https://js.recurly.com/v4/recurly.js"></script>
+  <link href="https://js.recurly.com/v4/recurly.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <p id="welcome-message">Preparing Recurly...</p>
+
+  <script>
+    recurly.configure({
+      api: 'https://api.recurly.com/js/v1',
+      publicKey: 'ewr1-zfJT5nPe1qW7jihI32LIRH',
+    });
+    recurly.ready(function () {
+      console.log('Recurly is Ready');
+      document.getElementById('welcome-message').innerHTML += '<br>Recurly is Ready';
+    });
+
+    console.log('Preparing Recurly...');
+  </script>
+</body>
+</html>
