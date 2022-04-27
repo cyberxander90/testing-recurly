@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test3 - The hosted-field@1.4.10 hosted locally with rjs@4.19.1 installing it with `npm install`</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"></meta>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+      }
+
+      input {
+        background: transparent;
+        border: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        outline: none;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Test3 - The hosted-field@1.4.10 hosted locally with rjs@4.19.1 installing it with `npm install`</p>
+    <input id="recurly-hosted-field-input" type="text"></input>
+    <script>
+      (function () {
+        document.body.appendChild(tag());
+
+        function tag () {
+          var script = document.createElement('script');
+          script.src = 'https://cyberxander90.github.io/testing-recurly/test3/hosted-field.js';
+          return script;
+        }
+      })();
+    </script>
+  </body>
+</html>
